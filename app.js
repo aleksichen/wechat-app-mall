@@ -145,15 +145,16 @@ App({
     }
   },
   initNickAvatarUrlPOP(_this) {
-    setTimeout(() => {
-      if (this.globalData.apiUserInfoMap && (!this.globalData.apiUserInfoMap.base.nick || !this.globalData.apiUserInfoMap.base.avatarUrl)) {
-        _this.setData({
-          nickPopShow: true,
-          popnick: this.globalData.apiUserInfoMap.base.nick ? this.globalData.apiUserInfoMap.base.nick : '',
-          popavatarUrl: this.globalData.apiUserInfoMap.base.avatarUrl ? this.globalData.apiUserInfoMap.base.avatarUrl : '',
-        })
-      }
-    }, 3000) // 3秒后弹出
+    return;
+    // setTimeout(() => {
+    //   if (this.globalData.apiUserInfoMap && (!this.globalData.apiUserInfoMap.base.nick || !this.globalData.apiUserInfoMap.base.avatarUrl)) {
+    //     _this.setData({
+    //       nickPopShow: true,
+    //       popnick: this.globalData.apiUserInfoMap.base.nick ? this.globalData.apiUserInfoMap.base.nick : '',
+    //       popavatarUrl: this.globalData.apiUserInfoMap.base.avatarUrl ? this.globalData.apiUserInfoMap.base.avatarUrl : '',
+    //     })
+    //   }
+    // }, 3000) // 3秒后弹出
   },
   globalData: {
     isConnected: true,
